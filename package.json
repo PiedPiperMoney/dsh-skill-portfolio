@@ -1,0 +1,60 @@
+{
+  "name": "dsh-skill-portfolio",
+  "version": "0.1.1",
+  "description": "Навык DSH: личный дашборд инвестиционного портфеля — Snowball, Т-Инвестиции, БКС, Сбербанк, «Интеллектуальный инвестор» и CSV",
+  "author": "Настоящий инвестор (https://t.me/investor_true)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "assets",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "skill",
+    "portfolio",
+    "investments",
+    "snowball",
+    "tinvest"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiedPiperMoney/dsh-skill-portfolio.git"
+  },
+  "homepage": "https://github.com/PiedPiperMoney/dsh-skill-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/PiedPiperMoney/dsh-skill-portfolio/issues"
+  },
+  "scripts": {
+    "test": "node test/provider.test.mjs && node scripts/check-skill.mjs",
+    "pack:check": "npm pack --dry-run",
+    "sync": "node scripts/sync-skill.mjs",
+    "release": "node scripts/release.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

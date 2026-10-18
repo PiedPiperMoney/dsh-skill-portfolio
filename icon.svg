@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Портфель">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <path d="M10 46h44" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+  <path d="M12 40l10-9 9 5 10-13 11 4" fill="none" stroke="#34d399" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="52" cy="27" r="4" fill="#34d399"/>
+  <path d="M12 40v6h40v-6" fill="none" stroke="#34d399" stroke-width="2" opacity=".35"/>
+</svg>

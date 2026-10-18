@@ -1,0 +1,5 @@
+# The bundle adds one row: the provider that publishes the portfolio skill.
+# The row names this same package, whose main module registers the skill.
+- insert:
+    - id: skill-portfolio
+      name: 'dsh-skill-portfolio'
